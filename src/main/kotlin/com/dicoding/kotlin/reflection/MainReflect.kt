@@ -19,7 +19,7 @@ fun main() {
 /*jka kita membandingkan sebuah objek dengan equals maka secara default akan selalu
 * bernilai false mengapa demikian karena secara default objek yg kita buat dari class A misal
 * dan objek yg kita buat lagi dari class B, masing-masing objek ini merupakan 2 objek yg berbeda
-* karena alamat memory mereka  class Reflect() pertama di alamat memory A untuk objek A
+* karena alamat memory mereka berbeda. sebagai contoh class Reflect() pertama di alamat memory A untuk objek A
 * sedangkan ketika kita buat objeknya lagi dari class Reflect juga nah class Reflect tersebut
 * berada di alamat memory B untuk objek B */
 
