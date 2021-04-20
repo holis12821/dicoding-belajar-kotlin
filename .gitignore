@@ -1,0 +1,73 @@
+# Created by https://www.gitignore.io
+
+### Intellij ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+*.iml
+
+## Directory-based project format:
+.idea/
+.idea/libraries/KotlinJavaRuntime.xml
+# if you remove the above rule, at least ignore the following:
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/misc.xml
+.idea/kotlinc.xml
+.idea/vcs.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/codeStyles/*
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+#ignore configure kotlin
+lib/*
+
+#out folder
+out/*
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+#gradle
+.gradle/*
+#build
+build/classes/*
+#gradle wrapper and gradle properties
+gradle/wrapper/*
+
+build/classes
+build/kotlin
+build/reports
+build/test-results
+
+
