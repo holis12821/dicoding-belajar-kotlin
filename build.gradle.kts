@@ -27,6 +27,15 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+
+    //Use RxJava
+    implementation("io.reactivex.rxjava2:rxjava:2.0.5")
+
+    //use Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:adapter-rxjava:2.4.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.0.2")
+    implementation("com.squareup.okhttp3:okhttp:3.12.13")
 }
 
 application {

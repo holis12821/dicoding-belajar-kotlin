@@ -37,7 +37,7 @@ class Reflect (
         /*jika tdk terpenuhi / false return false ke fungsi reflect dan keluar dri blok fungsi*/
 
         other as Reflect
-
+        /*ini sebenarnya yg menjadi kunci method equals() yaitu membandingkan nilai*/
         if (name != other.name) return false
         if (age != other.age) return false
 
