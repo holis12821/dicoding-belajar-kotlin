@@ -44,7 +44,7 @@ fun mapping() {
     println(multipliedBy5)
 
     println()
-    //count list  
+    //count list
     println(numberList.count())
     println()
     println(numberList.count {
