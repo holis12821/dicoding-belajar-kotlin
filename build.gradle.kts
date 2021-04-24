@@ -19,6 +19,8 @@ repositories {
 }
 
 dependencies {
+
+
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
@@ -36,6 +38,9 @@ dependencies {
     implementation("com.squareup.retrofit2:adapter-rxjava:2.4.0")
     implementation("com.squareup.retrofit2:converter-gson:2.0.2")
     implementation("com.squareup.okhttp3:okhttp:3.12.13")
+
+    //live data
+
 }
 
 application {
