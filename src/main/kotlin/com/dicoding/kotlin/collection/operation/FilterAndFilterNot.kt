@@ -23,6 +23,21 @@ fun main() {
 
     println()
     mapping()
+    count()
+
+
+    println()
+    find()
+    println()
+    first()
+    println()
+    firstOrNull()
+    lastOrNull()
+    last()
+    sum()
+    println()
+    sortedAscending()
+    sortedDescending()
 }
 
 
@@ -42,12 +57,80 @@ fun mapping() {
     val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10)
     val multipliedBy5 = numberList.map { it * 5 }
     println(multipliedBy5)
+}
 
+fun count() {
     println()
     //count list
+    val numberList = (1..10).toList()
     println(numberList.count())
     println()
     println(numberList.count {
         it % 3 == 0
     })
 }
+
+fun find() {
+    println("Find")
+    println()
+    val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10)
+    val firstOddNumber = numberList.find { it % 2 == 1 }
+
+    println(firstOddNumber)
+}
+
+fun firstOrNull() {
+    println("First or null")
+    println()
+    val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10)
+    val firstOddNumber = numberList.firstOrNull { it % 2 == 3 }
+    println(firstOddNumber)
+}
+
+fun lastOrNull() {
+    println("Last or null")
+    println()
+    val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10)
+    val firstOddNumber = numberList.lastOrNull { it % 2 == 0}
+    println(firstOddNumber)
+}
+
+
+fun first() {
+    println("First")
+    println()
+    val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10)
+    val moreThan10 = numberList.first { it % 2 == 1 }
+    println(moreThan10)
+}
+
+fun last() {
+    println("Last")
+    println()
+    val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10)
+    val moreThan10 = numberList.last { it % 2 == 0 }
+    println(moreThan10)
+}
+
+fun sum() {
+    println("Sum")
+    println()
+    val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10)
+    val total = numberList.sum()
+    println(total)
+}
+
+fun sortedAscending() {
+    val kotlinChar = listOf('k', 'o', 't', 'l', 'i', 'n' )
+    val ascandingSort = kotlinChar.sorted()
+    println(ascandingSort)
+}
+
+fun sortedDescending() {
+    val kotlinChar = listOf('k', 'o', 't', 'l', 'i', 'n')
+    val descendingSort = kotlinChar.sortedDescending()
+    println(descendingSort)
+}
+
+
+
