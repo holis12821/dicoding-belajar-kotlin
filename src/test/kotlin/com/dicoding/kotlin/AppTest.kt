@@ -3,13 +3,14 @@
  */
 package com.dicoding.kotlin
 
+import com.dicoding.kotlin.functionalprogramming.slice
 import com.dicoding.kotlin.whenexpression.WhenExpression
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
 class AppTest {
     @Test fun testAppHasAGreeting() {
-        val classUnderTest = WhenExpression()
-        assertNotNull(classUnderTest.color, "app should have a greeting")
+        val value: Int? = null
+        println(value.slice)
     }
 }

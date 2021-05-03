@@ -1,5 +1,17 @@
 package com.dicoding.kotlin.range
 
+
+/*documentation
+* create by Nurholis 26-04-2021
+* range itu mirip dengan array
+* yg mana di dalam nya itu menampung kumpulan tipe data integer
+* yg mana ditampung oleh variabel range yaitu bertipe range atau int progression
+* jika berada di paling terakhir maka tipe kembalian di vaariabelnya bertipe int progresssion
+* ketika ingin di looping, yg diebrikan ke varibale i adalah tipe elemen range nya
+* yaitu INT jadi tipe data i atau variabel pada looping fornya itu int*/
+
+
+
 fun main() {
     rangeToInt()
     rangeInTo()
@@ -43,6 +55,7 @@ fun characterRange() {
 
 fun forLooping() {
     println()
+
     val ranges = 1.rangeTo(10) step 3
     for (i in ranges) {
         println("value is $i!")

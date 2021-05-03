@@ -13,6 +13,13 @@ class DataUser(
 
     override fun equals(other: Any?): Boolean {
         /*todo 1 membandingkan nama class nya terlebih dahulu*/
+
+        //this ini akan bergantung pada objek mana yg mengakses sebuah fungsi, property
+        //atau apapun pada class nya, ketika objek 1 yg mengakses berarti
+        //this ini atau objek yg saat ini bisa kita tentukan objek manakah yg aka dirujuk
+        //oleh keyword this ini tergantung pada objek manakah yg mengakses atau memanggil fungsi atau propertynya yg dimilikinya
+        //dan sebaliknya juga demikian.
+
         if (this === other) return true /*ini tdk dijalankan jika 2 objeknya berbeda*/
         /*walau di instance dengan class yg sama tetapi setiap membuat sebuah objek dri kelas yg sama tersebut
         * secara tdk langsung kita membuat sebuah objek yg berbeda dan alamat memorynya berbeda

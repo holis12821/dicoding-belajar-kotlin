@@ -2,7 +2,7 @@ package com.dicoding.kotlin.common
 
 import com.dicoding.kotlin.enumeration.ColorEnum
 
-class Kucing: Hewan() {
+open class Kucing: Hewan() {
 
     override val color: ColorEnum
         get() = super.color

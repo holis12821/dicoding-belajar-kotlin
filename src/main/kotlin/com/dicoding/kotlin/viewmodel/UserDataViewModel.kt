@@ -12,6 +12,15 @@ class UserDataViewModel{
 
         mutableShowDialog.add(userData)
         mutableShowDialog.add(userData2)
+
+        //jadi inteface list akan memberikan tipe data generic
+        // (untuk elemen"elemen list yg didalamnya )
+        // ke dalam
+        //variabel i di looping fornya, setelah itu baru di cek apakah
+        //objek userdata ada di dlm interface listnya
+        //nah ini digunakan untuk kita mengecek apakah objek nya tersebut
+        //sesuai dengan tipe data generic dlm listnya ada atau tdk di
+        //dlm interface listnya
     }
 
     fun showData()  {
