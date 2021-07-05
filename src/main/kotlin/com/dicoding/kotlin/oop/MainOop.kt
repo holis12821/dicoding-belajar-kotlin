@@ -8,14 +8,24 @@ fun main() {
     println("Minimal Speed: ${avanza.minSpeed}km/jam")
 
     avanza.startEngine()
-    avanza.breakEngine()
+
+    var brake = avanza.brakeEngine()
+
+    while(brake <= 99) {
+      if (brake == 20) break
+      println("Engine brake di kecepatan : $brake km/jam")
+        brake--
+    }
 
     val engineDiesel = EngineDiesel()
 
     val truck = Truck(engineDiesel)
+
+
+
 }
 
 
-fun Car.breakEngine(): Int {
-   return this.maxSpeed - 2
+fun Car.brakeEngine(): Int {
+   return this.maxSpeed
 }

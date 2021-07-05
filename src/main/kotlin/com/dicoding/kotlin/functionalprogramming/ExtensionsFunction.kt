@@ -37,7 +37,7 @@ fun Int.plusThree(): Int = this + 3
 
 //exstension function
 //jadi kita tdk perlu membuat class baru yg inherid atau mewarisi
-//karena sebenarnya class baru ini merepresentasikan class induknya y
+//karena sebenarnya class baru ini merepresentasikan class induknya yg
 //ingin membuat fungsi baru
 ///penambahan fungsi baru sebenarnya untuk memperluas fungsionalitas
 //dari class supper nya

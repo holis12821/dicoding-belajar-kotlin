@@ -3,7 +3,7 @@ package com.dicoding.kotlin.functionalprogramming
 fun main() {
 
     val value: Int? = null
-    //println(value.slice)
+    println(value.slice)
 }
 //Int?.slice atau class Int yg
 // menambahkan extension properti

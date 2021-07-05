@@ -39,6 +39,9 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.0.2")
     implementation("com.squareup.okhttp3:okhttp:3.12.13")
 
+    //kotlin coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5")
+
     //live data
 
 }

@@ -7,7 +7,7 @@ fun main() {
   val result: Sum = {valueA, valueB -> valueA + valueB}
   println("Result : ${result(12, 12)}")
 
-  println(sum(12, 12))
+  println(sum.invoke(12,12))
 
   val engineElectric = EngineElectric()
   val car = Car(engineElectric)

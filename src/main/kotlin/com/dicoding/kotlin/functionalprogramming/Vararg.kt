@@ -13,27 +13,32 @@ fun main() {
 
     val number2 = intArrayOf(10, 20, 30, 40)
 
+    println()
+
     val number = sumNumbers(10, 20, *number2 ,30, 40)
-    println(number)
+    println("Number : $number")
 
     val list = asList(1,2,3,4,5,6,7,8)
     for (i in list) {
         println(i)
     }
-
-  val setElement =  sets(5, 1, 2, 3, 4, 5)
-    println()
-  if (setElement != null) {
-      for (i in setElement) {
-          println("Element Array : $i")
-      }
-  }
+ //handle error
+   try {
+       val setElement =  sets(5, 1, 2, 3, 4, 5)
+       println()
+       for (i in setElement) {
+           println("Element Array : $i")
+       }
+   } catch(e: IndexOutOfBoundsException) {
+       println(e.message)
+   }
 
     setsArgument(1,2,3,4,5, name = "Holis")
 
 }
 
 fun setsArgument(vararg number: Int, name: String): Int {
+    println("Name : $name")
     return number.size
 }
 
@@ -60,7 +65,7 @@ fun <T> asList(vararg  input: T): List<T> {
     return result
 }
 
-fun <T> sets(size: Int, vararg number: T): List<T>? {
+fun <T> sets(size: Int, vararg number: T): List<T> {
     val result = arrayListOf<T>()
     if (size == number.size) {
         println(number)
@@ -69,6 +74,7 @@ fun <T> sets(size: Int, vararg number: T): List<T>? {
             result.add(i)
         }
         return result
+    } else {
+        throw IndexOutOfBoundsException("The data array is over capacity")
     }
-    return null
 }

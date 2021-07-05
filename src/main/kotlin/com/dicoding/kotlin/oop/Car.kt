@@ -7,11 +7,13 @@ class Car(private val engine: Engine): Vehicle() {
     override val minSpeed: Int
         get() = 30
     override val maxSpeed: Int
-        get() = 100
+        get() = 70
 
     override fun startEngine() {
       engine.start()
     }
+
+
 
     override fun stopEngine() {
        engine.stop()

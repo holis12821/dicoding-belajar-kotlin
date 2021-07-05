@@ -13,6 +13,9 @@ open class Kucing: Hewan() {
     override val weight: Int
         get() = super.weight
 
+     override  val name: String
+       get() = super.name
+
     override fun eating(): String {
       val weighEatingInstance =   weight + 1
         return "Berat Badan : $weighEatingInstance"
